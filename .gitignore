@@ -1,0 +1,14 @@
+.idea/
+.vscode/
+*.sw*
+assets/css/*.scss
+assets/css/*.less
+assets/css/dist/*.css
+!assets/css/dist/*.min.css
+!assets/css/dist/locomotive-scroll.css
+!assets/logo
+!assets/fonts
+!assets/favicon
+!assets/js
+**/.DS_Store
+.DS_Store
