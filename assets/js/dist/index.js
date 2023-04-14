@@ -1280,7 +1280,7 @@ function initScrolltriggerAnimations() {
                 // Scrolltrigger Animation : About Services BG
                 $(".about-vita").each(function (index) {
                     let triggerElement = $(this);
-                    let targetElement = $(".about-header, .about-intro, .about-vita, .about-clients");
+                    let targetElement = $(".about-intro, .about-vita, .about-clients");
 
                     let tl = gsap.timeline({
                         scrollTrigger: {
@@ -1291,10 +1291,10 @@ function initScrolltriggerAnimations() {
                         }
                     });
                     tl.set(targetElement, {
-                        backgroundColor: "#FFFFFF",
+                        backgroundColor: "hsl(0, 0%, 100%)",
                     })
                     tl.to(targetElement, {
-                        backgroundColor: "#EBEAEC",
+                        backgroundColor: "hsla(270, 5%, 92%, 1)",
                         ease: "none",
                     });
                 });
@@ -1304,7 +1304,7 @@ function initScrolltriggerAnimations() {
                 // Scrolltrigger Animation : About Services BG
                 $(".about-clients").each(function (index) {
                     let triggerElement = $(this);
-                    let targetElement = $(".about-header, .about-intro, .about-vita, .about-clients");
+                    let targetElement = $(".about-intro, .about-vita, .about-clients");
 
                     let tl = gsap.timeline({
                         scrollTrigger: {
@@ -1315,10 +1315,10 @@ function initScrolltriggerAnimations() {
                         }
                     });
                     tl.set(targetElement, {
-                        backgroundColor: "#EBEAEC",
+                        backgroundColor: "hsla(270, 5%, 92%, 1)",
                     })
                     tl.to(targetElement, {
-                        backgroundColor: "#FFFFFF",
+                        backgroundColor: "hsl(0, 0%, 100%)",
                         ease: "none",
                     });
                 });
