@@ -1,5 +1,7 @@
 .idea/
 .vscode/
+**/.DS_Store
+.DS_Store
 *.sw*
 assets/css/*.scss
 assets/css/*.less
@@ -7,8 +9,6 @@ assets/css/dist/*.css
 assets/css/dist/*.min.css.map
 assets/dist
 dist
-**/.DS_Store
-.DS_Store
 
 !assets/css/dist/*.min.css
 !assets/css/dist/locomotive-scroll.css
