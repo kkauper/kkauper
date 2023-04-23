@@ -521,8 +521,6 @@ function initScript() {
     initScrolltriggerNav();
     initScrollLetters();
     initTricksWords();
-    initContactForm();
-    initTimeZone();
     initLazyLoad();
     initPlayVideoInview();
     initScrolltriggerAnimations();
@@ -1078,32 +1076,6 @@ function initTricksWords() {
         wordWrap.innerHTML = wordWrap.innerHTML.replace(/(^|<\/?[^>]+>|\s+)([^\s<]+)/g, '$1<span class="span-line"><span class="span-line-inner">$2</span></span>');
 
     }
-
-}
-
-/**
- * Contact Form
- */
-function initContactForm() {
-
-    $('.field').on('input', function () {
-        $(this).parent().toggleClass('not-empty', this.value.trim().length > 0);
-    });
-
-    $(function () {
-        $('.field').focusout(function () {
-            var text_val = $(this).val();
-            $(this).parent().toggleClass('not-empty', text_val !== "");
-        }).focusout();
-    });
-
-}
-
-/**
- * Footer Time Zone
- */
-function initTimeZone() {
-
 
 }
 
